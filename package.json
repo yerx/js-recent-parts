@@ -1,0 +1,19 @@
+{
+  "name": "js-recent-parts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yerx/js-recent-parts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yerx/js-recent-parts/issues"
+  },
+  "homepage": "https://github.com/yerx/js-recent-parts#readme"
+}
