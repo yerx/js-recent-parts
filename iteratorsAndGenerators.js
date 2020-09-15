@@ -35,6 +35,33 @@ console.log(myIterator()); // -> should log 'd'
 /*
 Challenge 2
 Create an iterator with a next method that returns each value of the array when .next is called.
+*/
+
+function nextIterator(arr) {
+  let nextIndex = 0;
+
+  const iterator = {
+    next: function () {
+      let result;
+      if (nextIndex < arr.length) {
+        result = { value: arr[nextIndex], done: false };
+        nextIndex++;
+        return result;
+      }
+      return { value: "undefined", done: true };
+    },
+  };
+  return iterator;
+}
+
+// Uncomment the lines below to test your work
+const array3 = [1, 2, 3];
+const iteratorWithNext = nextIterator(array3);
+console.log("Challenge 2", iteratorWithNext.next()); // -> should log 1
+console.log(iteratorWithNext.next()); // -> should log 2
+console.log(iteratorWithNext.next()); // -> should log 3
+
+/*
 Challenge 3
 Write code to iterate through an entire array using your nextIterator and sum the values.
 Challenge 4
